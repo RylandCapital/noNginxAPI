@@ -5,10 +5,9 @@ import axios from 'axios';
 import { TypeChooser } from "react-stockcharts/lib/helper";
 
 
-
 export default class ChartComponent extends React.Component {
 	componentDidMount() {
-		axios.get('http://localhost:5000/spxml')
+		axios.get('http://18.216.242.3/spxml')
 		.then((res) => {
 			
 			let values = res.data
