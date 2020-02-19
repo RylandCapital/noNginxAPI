@@ -1,9 +1,9 @@
 const router = require('express').Router();
-let spxml = require('../models/spxml.model');
+let xlkml = require('../models/xlkml.model');
 
 router.route('/').get((req, res) => {
-    spxml.find()
-    .then(spxml => res.json(spxml))
+    xlkml.find()
+    .then(xlkml => res.json(xlkml))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 

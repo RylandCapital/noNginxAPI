@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const xlvmlSchema = new Schema({
+const spymlSchema = new Schema({
   _index: { type: Date, required: true },
   maxprec_short: { type: Number, required: true },
   x2xrand_short: { type: Number, required: true },
@@ -17,9 +17,9 @@ const xlvmlSchema = new Schema({
   close: { type: Number, required: true },
 }, {
   timestamps: true,
-  collection: 'xlvml'
+  collection: 'spyml'
 });
 
-const xlvml = mongoose.model('xlvml', xlvmlSchema);
+const spyml = mongoose.model('spyml', spymlSchema);
 
-module.exports = xlvml;
+module.exports = spyml;

@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const spxmlSchema = new Schema({
-  index: { type: Date, required: true },
+const xlkmlSchema = new Schema({
+  _index: { type: Date, required: true },
   maxprec_short: { type: Number, required: true },
   x2xrand_short: { type: Number, required: true },
   maxf1_short: { type: Number, required: true },
@@ -14,12 +14,12 @@ const spxmlSchema = new Schema({
   proba_1_short: { type: Number, required: true },
   proba_diff: { type: Number, required: true },
   proba_1_long: { type: Number, required: true },
-  _date: { type: String, required: true },
+  close: { type: Number, required: true },
 }, {
   timestamps: true,
-  collection: 'spxml'
+  collection: 'xlkml'
 });
 
-const spxml = mongoose.model('spxml', spxmlSchema);
+const xlkml = mongoose.model('xlkml', xlkmlSchema);
 
-module.exports = spxml;
+module.exports = xlkml;
