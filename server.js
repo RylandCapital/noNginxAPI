@@ -47,6 +47,7 @@ const xlpmlRouter = require('./routes/xlpml');
 const xlvmlRouter = require('./routes/xlvml');
 const xlymlRouter = require('./routes/xlyml');
 const xlkmlRouter = require('./routes/xlkml');
+const hctestRouter = require('./routes/hctest');
 
 app.use('/', spxRouter);
 app.use('/spx', spxRouter);
@@ -76,6 +77,7 @@ app.use('/xlpml', xlpmlRouter);
 app.use('/xlvml', xlvmlRouter);
 app.use('/xlyml', xlymlRouter);
 app.use('/xlkml', xlkmlRouter);
+app.use('/hctest', hctestRouter);
 
 
 
