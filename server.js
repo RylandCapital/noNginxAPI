@@ -48,6 +48,7 @@ const xlvmlRouter = require('./routes/xlvml');
 const xlymlRouter = require('./routes/xlyml');
 const xlkmlRouter = require('./routes/xlkml');
 const hctestRouter = require('./routes/hctest');
+const hctestrRouter = require('./routes/hctestr');
 
 app.use('/', spxRouter);
 app.use('/spx', spxRouter);
@@ -78,7 +79,7 @@ app.use('/xlvml', xlvmlRouter);
 app.use('/xlyml', xlymlRouter);
 app.use('/xlkml', xlkmlRouter);
 app.use('/hctest', hctestRouter);
-
+app.use('/hctestr', hctestrRouter);
 
 
 app.listen(port, () => {

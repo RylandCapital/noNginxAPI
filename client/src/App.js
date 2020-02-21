@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 import Navbar from "./components/navbar.component"
-import ChartComponent from "./components/lchartone.component"
+import ChartComponent from "./components/reacths.component"
+
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   <Router>
     <div>
       <Switch>
-        <Route path='/spxmldiff'>
+        <Route path='/spyml_model'>
             <div className="container">
               <Navbar />
               <br/>
@@ -21,7 +22,7 @@ function App() {
         </Route>
         <Route path = '/'>
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-          <Link to="/spxmldiff" className="navbar-brand">Syndicate Dashboard Prototype</Link>
+          <Link to="/spyml_model" className="navbar-brand">Syndicate Dashboard Prototype</Link>
           <div className="collpase navbar-collapse">
           <ul className="navbar-nav mr-auto"></ul>
           </div>

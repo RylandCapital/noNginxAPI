@@ -7,17 +7,17 @@ import { TypeChooser } from "react-stockcharts/lib/helper";
 
 export default class ChartComponent extends React.Component {
 	componentDidMount() {
-		axios.get('http://18.216.242.3/spxml')
+		axios.get('http://18.216.242.3/spyml')
 		.then((res) => {
 			
 			let values = res.data
 			let data = values.map((obj) => {
-				let date = obj.long__index
+				let date = obj._index
 				obj.date = new Date(date)
-				obj.close = obj.long_short_proba
-				obj.open = obj.long_short_proba
-				obj.high = obj.long_short_proba
-				obj.low = obj.long_short_proba
+				obj.close = obj.proba_1_long
+				obj.open = obj.proba_1_long
+				obj.high = obj.proba_1_long
+				obj.low = obj.proba_1_long
 				obj.volume = 0
 				return obj
 				
