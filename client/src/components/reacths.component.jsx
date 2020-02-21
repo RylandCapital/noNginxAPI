@@ -9,21 +9,31 @@ export default class ChartComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-     data: []
+
+      parsedData : []
+     
     }
   }
   async componentDidMount() {
-		let data = await axios.get('http://18.216.242.3/hctest')
+		let data = await axios.get('http://18.216.242.3/hctestr')
       .then(res => res.data)
       .catch(err => {
         return err;
-    }
-    )
-    
-    console.log(data)
-    this.setState({ data })
+    })
+
+    let parsedData = []
+    data.forEach(element => {
+    parsedData.push({
+    name: element._index,
+    y: element.proba_1_long
+      });
+    });
+
+    console.log(parsedData)
+    this.setState({ parsedData })
+    console.log(this.state.parsedData)
 		
-	}
+  }
 
 render() {
 
@@ -32,7 +42,7 @@ render() {
       text: 'My stock chart'
     },
     series: [{
-      data: [this.state.data]
+      data: this.state.parsedData
     }]
   }
 

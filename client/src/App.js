@@ -7,7 +7,6 @@ import Navbar from "./components/navbar.component"
 import ChartComponent from "./components/reacths.component"
 
 
-
 function App() {
  return (
   <Router>
