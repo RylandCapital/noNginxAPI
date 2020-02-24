@@ -4,34 +4,27 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 import Navbar from "./components/navbar.component"
-import ChartComponent from "./components/reacths.component.js"
+import ChartComponent from "./components/reacths.component"
 
 
 function App() {
  return (
   <Router>
-    <div>
-      <Switch>
-        <Route path='/spyml_model'>
-            <div className="container">
-              <Navbar />
-              <br/>
-              <ChartComponent />
-            </div>
-        </Route>
-        <Route path = '/'>
+    <div> 
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-          <Link to="/spyml_model" className="navbar-brand">Syndicate Dashboard Prototype</Link>
+          <div className="navbar-brand">Machine Learning Models</div>
           <div className="collpase navbar-collapse">
           <ul className="navbar-nav mr-auto"></ul>
           </div>
         </nav>
-        <h3> Welcome to the Syndicate </h3>
-        With over 10 years experience at the quantitave market analysis, the Syndicate 
-        team hope to provide you with most actionable trading models using a variety of
-        machine learning techniques
+    <Switch>
+        <Route path='/spyml_chart'>
+            <div className="container">
+              <br/>
+              <ChartComponent />
+            </div>
         </Route>
-      </Switch>
+    </Switch>
     </div>
   </Router>
  );

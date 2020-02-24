@@ -50,7 +50,7 @@ const xlkmlRouter = require('./routes/xlkml');
 const hctestRouter = require('./routes/hctest');
 const hctestrRouter = require('./routes/hctestr');
 
-app.use('/', spxRouter);
+/*app.use('/', spxRouter);*/
 app.use('/spx', spxRouter);
 app.use('/vix', vixRouter);
 app.use('/tlt', tltRouter);
