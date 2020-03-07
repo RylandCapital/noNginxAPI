@@ -49,6 +49,32 @@ const xlymlRouter = require('./routes/xlyml');
 const xlkmlRouter = require('./routes/xlkml');
 const hctestRouter = require('./routes/hctest');
 const hctestrRouter = require('./routes/hctestr');
+const spy5pRouter = require('./routes/spy5p');
+const spy10pRouter = require('./routes/spy10p');
+const xlb5pRouter = require('./routes/xlb5p');
+const xlb10pRouter = require('./routes/xlb10p');
+const xle5pRouter = require('./routes/xle5p');
+const xle10pRouter = require('./routes/xle10p');
+const xlf5pRouter = require('./routes/xlf5p');
+const xlf10pRouter = require('./routes/xlf10p');
+const xli5pRouter = require('./routes/xli5p');
+const xli10pRouter = require('./routes/xli10p');
+const xlv5pRouter = require('./routes/xlv5p');
+const xlv10pRouter = require('./routes/xlv10p');
+const xlp5pRouter = require('./routes/xlp5p');
+const xlp10pRouter = require('./routes/xlp10p');
+const xly5pRouter = require('./routes/xly5p');
+const xly10pRouter = require('./routes/xly10p');
+const xlk5pRouter = require('./routes/xlk5p');
+const xlk10pRouter = require('./routes/xlk10p');
+const xlu5pRouter = require('./routes/xlu5p');
+const xlu10pRouter = require('./routes/xlu10p');
+const tlt5pRouter = require('./routes/tlt5p');
+const tlt10pRouter = require('./routes/tlt10p');
+const vix5pRouter = require('./routes/vix5p');
+const vix10pRouter = require('./routes/vix10p');
+
+
 
 /*app.use('/', spxRouter);*/
 app.use('/spx', spxRouter);
@@ -80,6 +106,30 @@ app.use('/xlyml', xlymlRouter);
 app.use('/xlkml', xlkmlRouter);
 app.use('/hctest', hctestRouter);
 app.use('/hctestr', hctestrRouter);
+app.use('/spy5p', spy5pRouter);
+app.use('/spy10p', spy10pRouter);
+app.use('/xlb5p', xlb5pRouter);
+app.use('/xlb10p', xlb10pRouter);
+app.use('/xle5p', xle5pRouter);
+app.use('/xle10p', xle10pRouter);
+app.use('/xlf5p', xlf5pRouter);
+app.use('/xlf10p', xlf10pRouter);
+app.use('/xli5p', xli5pRouter);
+app.use('/xli10p', xli10pRouter);
+app.use('/xlv5p', xlv5pRouter);
+app.use('/xlv10p', xlv10pRouter);
+app.use('/xlp5p', xlp5pRouter);
+app.use('/xlp10p', xlp10pRouter);
+app.use('/xly5p', xly5pRouter);
+app.use('/xly10p', xly10pRouter);
+app.use('/xlk5p', xlk5pRouter);
+app.use('/xlk10p', xlk10pRouter);
+app.use('/xlu5p', xlu5pRouter);
+app.use('/xlu10p', xlu10pRouter);
+app.use('/tlt5p', tlt5pRouter);
+app.use('/tlt10p', tlt10pRouter);
+app.use('/vix5p', vix5pRouter);
+app.use('/vix10p', vix10pRouter);
 
 
 app.listen(port, () => {
