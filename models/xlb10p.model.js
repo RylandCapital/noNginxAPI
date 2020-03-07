@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const xlb10Schema = new Schema({
+const xlb10pSchema = new Schema({
   date: { type: Date, required: true },
   index: { type: String, required: true },
   median: { type: Number, required: true },
@@ -11,9 +11,9 @@ const xlb10Schema = new Schema({
   ticker: { type: String, required: true },
 }, {
   timestamps: true,
-  collection: 'xlb10'
+  collection: 'xlb10p'
 });
 
-const xlb10 = mongoose.model('xlb10', xlb10Schema);
+const xlb10p = mongoose.model('xlb10p', xlb10pSchema);
 
-module.exports = xlb10;
+module.exports = xlb10p;
