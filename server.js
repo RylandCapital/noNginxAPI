@@ -74,6 +74,7 @@ const tlt10pRouter = require('./routes/tlt10p');
 const vix5pRouter = require('./routes/vix5p');
 const vix10pRouter = require('./routes/vix10p');
 const momoRouter = require('./routes/momo');
+const momoalloRouter = require('./routes/momoallo');
 
 
 
@@ -132,6 +133,13 @@ app.use('/tlt10p', tlt10pRouter);
 app.use('/vix5p', vix5pRouter);
 app.use('/vix10p', vix10pRouter);
 app.use('/momo', momoRouter);
+app.use('/momoallo', momoalloRouter);
+
+
+
+
+
+
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

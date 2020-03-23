@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const momoSchema = new Schema({
-    date: { type: Number, required: true },
+    date: { type: Date, required: true },
     algo_volatility: { type: Number, required: true },
     algorithm_period_return: { type: Number, required: true },
     alpha: { type: Number, required: true },
