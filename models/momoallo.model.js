@@ -10,6 +10,7 @@ const momoalloSchema = new Schema({
     pct_allo: { type: Number, required: true },
     pct_pnl: { type: Number, required: true },
     portfolio_pct_pnl: { type: Number, required: true },
+    score: { type: Number, required: true },
 }, {
   timestamps: true,
   collection: 'momoallo'

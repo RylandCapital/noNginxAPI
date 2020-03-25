@@ -75,6 +75,8 @@ const vix5pRouter = require('./routes/vix5p');
 const vix10pRouter = require('./routes/vix10p');
 const momoRouter = require('./routes/momo');
 const momoalloRouter = require('./routes/momoallo');
+const momomonthlyRouter = require('./routes/momomonthly');
+const momoyearlyRouter = require('./routes/momoyearly');
 
 
 
@@ -134,6 +136,8 @@ app.use('/vix5p', vix5pRouter);
 app.use('/vix10p', vix10pRouter);
 app.use('/momo', momoRouter);
 app.use('/momoallo', momoalloRouter);
+app.use('/momomonthly', momomonthlyRouter);
+app.use('/momoyearly', momoyearlyRouter);
 
 
 
