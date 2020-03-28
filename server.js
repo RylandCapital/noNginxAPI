@@ -77,8 +77,9 @@ const momoRouter = require('./routes/momo');
 const momoalloRouter = require('./routes/momoallo');
 const momomonthlyRouter = require('./routes/momomonthly');
 const momoyearlyRouter = require('./routes/momoyearly');
-
-
+const mscoreRouter = require('./routes/mscore');
+const mscorefiveRouter = require('./routes/mscorefive');
+const mscoretenRouter = require('./routes/mscoreten');
 
 /*app.use('/', spxRouter);*/
 app.use('/spx', spxRouter);
@@ -138,6 +139,10 @@ app.use('/momo', momoRouter);
 app.use('/momoallo', momoalloRouter);
 app.use('/momomonthly', momomonthlyRouter);
 app.use('/momoyearly', momoyearlyRouter);
+app.use('/mscore', mscoreRouter);
+app.use('/mscorefive', mscorefiveRouter);
+app.use('/mscoreten', mscoretenRouter);
+
 
 
 
