@@ -81,7 +81,7 @@ const mscoreRouter = require('./routes/mscore');
 const mscorefiveRouter = require('./routes/mscorefive');
 const mscoretenRouter = require('./routes/mscoreten');
 
-/*app.use('/',express.static(path.join(__dirname, "client/build")))*/
+app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
 app.use('/vix', vixRouter);
 app.use('/tlt', tltRouter);
