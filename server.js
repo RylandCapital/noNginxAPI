@@ -80,6 +80,7 @@ const momoyearlyRouter = require('./routes/momoyearly');
 const mscoreRouter = require('./routes/mscore');
 const mscorefiveRouter = require('./routes/mscorefive');
 const mscoretenRouter = require('./routes/mscoreten');
+const peventsRouter = require('./routes/pevents');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -142,12 +143,7 @@ app.use('/momoyearly', momoyearlyRouter);
 app.use('/mscore', mscoreRouter);
 app.use('/mscorefive', mscorefiveRouter);
 app.use('/mscoreten', mscoretenRouter);
-
-
-
-
-
-
+app.use('/pevents', peventsRouter);
 
 
 app.listen(port, () => {
