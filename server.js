@@ -83,6 +83,7 @@ const mscoretenRouter = require('./routes/mscoreten');
 const peventsRouter = require('./routes/pevents');
 const peventshRouter = require('./routes/peventsh');
 const thrustRouter = require('./routes/thrust');
+const dvolsigRouter = require('./routes/dvolsig');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -148,6 +149,7 @@ app.use('/mscoreten', mscoretenRouter);
 app.use('/pevents', peventsRouter);
 app.use('/peventsh', peventshRouter);
 app.use('/thrust', thrustRouter);
+app.use('/dvolsig', dvolsigRouter);
 
 
 app.listen(port, () => {
