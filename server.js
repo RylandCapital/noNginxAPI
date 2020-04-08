@@ -84,6 +84,7 @@ const peventsRouter = require('./routes/pevents');
 const peventshRouter = require('./routes/peventsh');
 const thrustRouter = require('./routes/thrust');
 const dvolsigRouter = require('./routes/dvolsig');
+const twosdthreshRouter = require('./routes/twosdthresh');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -150,6 +151,7 @@ app.use('/pevents', peventsRouter);
 app.use('/peventsh', peventshRouter);
 app.use('/thrust', thrustRouter);
 app.use('/dvolsig', dvolsigRouter);
+app.use('/twosdthresh', twosdthreshRouter);
 
 
 app.listen(port, () => {
