@@ -85,6 +85,44 @@ const peventshRouter = require('./routes/peventsh');
 const thrustRouter = require('./routes/thrust');
 const dvolsigRouter = require('./routes/dvolsig');
 const twosdthreshRouter = require('./routes/twosdthresh');
+const spy5psyncRouter = require('./routes/spy5psync');
+const xlb5psyncRouter = require('./routes/xlb5psync');
+const xle5psyncRouter = require('./routes/xle5psync');
+const xlf5psyncRouter = require('./routes/xlf5psync');
+const xli5psyncRouter = require('./routes/xli5psync');
+const xlv5psyncRouter = require('./routes/xlv5psync');
+const xlp5psyncRouter = require('./routes/xlp5psync');
+const xly5psyncRouter = require('./routes/xly5psync');
+const xlk5psyncRouter = require('./routes/xlk5psync');
+const xlu5psyncRouter = require('./routes/xlu5psync');
+const tlt5psyncRouter = require('./routes/tlt5psync');
+const vix5psyncRouter = require('./routes/vix5psync');
+const spy10psyncRouter = require('./routes/spy10psync');
+const xlb10psyncRouter = require('./routes/xlb10psync');
+const xle10psyncRouter = require('./routes/xle10psync');
+const xlf10psyncRouter = require('./routes/xlf10psync');
+const xli10psyncRouter = require('./routes/xli10psync');
+const xlv10psyncRouter = require('./routes/xlv10psync');
+const xlp10psyncRouter = require('./routes/xlp10psync');
+const xly10psyncRouter = require('./routes/xly10psync');
+const xlk10psyncRouter = require('./routes/xlk10psync');
+const xlu10psyncRouter = require('./routes/xlu10psync');
+const tlt10psyncRouter = require('./routes/tlt10psync');
+const vix10psyncRouter = require('./routes/vix10psync');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -152,7 +190,30 @@ app.use('/peventsh', peventshRouter);
 app.use('/thrust', thrustRouter);
 app.use('/dvolsig', dvolsigRouter);
 app.use('/twosdthresh', twosdthreshRouter);
-
+app.use('/spy5psync', spy5psyncRouter);
+app.use('/xlb5psync', xlb5psyncRouter);
+app.use('/xle5psync', xle5psyncRouter);
+app.use('/xlf5psync', xlf5psyncRouter);
+app.use('/xli5psync', xli5psyncRouter);
+app.use('/xlv5psync', xlv5psyncRouter);
+app.use('/xlp5psync', xlp5psyncRouter);
+app.use('/xly5psync', xly5psyncRouter);
+app.use('/xlk5psync', xlk5psyncRouter);
+app.use('/xlu5psync', xlu5psyncRouter);
+app.use('/tlt5psync', tlt5psyncRouter);
+app.use('/vix5psync', vix5psyncRouter);
+app.use('/spy10psync', spy10psyncRouter);
+app.use('/xlb10psync', xlb10psyncRouter);
+app.use('/xle10psync', xle10psyncRouter);
+app.use('/xlf10psync', xlf10psyncRouter);
+app.use('/xli10psync', xli10psyncRouter);
+app.use('/xlv10psync', xlv10psyncRouter);
+app.use('/xlp10psync', xlp10psyncRouter);
+app.use('/xly10psync', xly10psyncRouter);
+app.use('/xlk10psync', xlk10psyncRouter);
+app.use('/xlu10psync', xlu10psyncRouter);
+app.use('/tlt10psync', tlt10psyncRouter);
+app.use('/vix10psync', vix10psyncRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
