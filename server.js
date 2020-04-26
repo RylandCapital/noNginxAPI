@@ -109,19 +109,15 @@ const xlk10psyncRouter = require('./routes/xlk10psync');
 const xlu10psyncRouter = require('./routes/xlu10psync');
 const tlt10psyncRouter = require('./routes/tlt10psync');
 const vix10psyncRouter = require('./routes/vix10psync');
-
-
-
-
-
-
-
-
-
-
-
-
-
+const spymlsyncRouter = require('./routes/spymlsync');
+const xlbmlsyncRouter = require('./routes/xlbmlsync');
+const xlemlsyncRouter = require('./routes/xlemlsync');
+const xlfmlsyncRouter = require('./routes/xlfmlsync');
+const xlimlsyncRouter = require('./routes/xlimlsync');
+const xlvmlsyncRouter = require('./routes/xlvmlsync');
+const xlpmlsyncRouter = require('./routes/xlpmlsync');
+const xlymlsyncRouter = require('./routes/xlymlsync');
+const xlkmlsyncRouter = require('./routes/xlkmlsync');
 
 
 app.use(express.static(path.join(__dirname, "client/build")))
@@ -214,6 +210,16 @@ app.use('/xlk10psync', xlk10psyncRouter);
 app.use('/xlu10psync', xlu10psyncRouter);
 app.use('/tlt10psync', tlt10psyncRouter);
 app.use('/vix10psync', vix10psyncRouter);
+app.use('/spymlsync', spymlsyncRouter);
+app.use('/xlbmlsync', xlbmlsyncRouter);
+app.use('/xlemlsync', xlemlsyncRouter);
+app.use('/xlfmlsync', xlfmlsyncRouter);
+app.use('/xlimlsync', xlimlsyncRouter);
+app.use('/xlvmlsync', xlvmlsyncRouter);
+app.use('/xlpmlsync', xlpmlsyncRouter);
+app.use('/xlymlsync', xlymlsyncRouter);
+app.use('/xlkmlsync', xlkmlsyncRouter);
+
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
