@@ -1,9 +1,9 @@
 const router = require('express').Router();
-let spy10psync = require('../models/spy10psync.model');
+let vix10psync = require('../models/vix10psync.model');
 
 router.route('/').get((req, res) => {
-    spy10psync.find()
-        .then(spy10psync => res.json(spy10psync))
+    vix10psync.find()
+        .then(vix10psync => res.json(vix10psync))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
