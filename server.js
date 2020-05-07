@@ -119,6 +119,9 @@ const xlpmlsyncRouter = require('./routes/xlpmlsync');
 const xlymlsyncRouter = require('./routes/xlymlsync');
 const xlkmlsyncRouter = require('./routes/xlkmlsync');
 const spyIA5Router = require('./routes/spyIA5');
+const momostatsRouter = require('./routes/momostats');
+
+
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -220,6 +223,7 @@ app.use('/xlpmlsync', xlpmlsyncRouter);
 app.use('/xlymlsync', xlymlsyncRouter);
 app.use('/xlkmlsync', xlkmlsyncRouter);
 app.use('/spyIA5', spyIA5Router);
+app.use('/momostats', momostatsRouter);
 
 
 app.listen(port, () => {
