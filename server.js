@@ -120,6 +120,7 @@ const xlymlsyncRouter = require('./routes/xlymlsync');
 const xlkmlsyncRouter = require('./routes/xlkmlsync');
 const spyIA5Router = require('./routes/spyIA5');
 const momostatsRouter = require('./routes/momostats');
+const momodrawRouter = require('./routes/momodraw');
 
 
 
@@ -224,6 +225,8 @@ app.use('/xlymlsync', xlymlsyncRouter);
 app.use('/xlkmlsync', xlkmlsyncRouter);
 app.use('/spyIA5', spyIA5Router);
 app.use('/momostats', momostatsRouter);
+app.use('/momodraw', momodrawRouter);
+
 
 
 app.listen(port, () => {
