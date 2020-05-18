@@ -122,6 +122,7 @@ const spyIA5Router = require('./routes/spyIA5');
 const momostatsRouter = require('./routes/momostats');
 const momodrawRouter = require('./routes/momodraw');
 const momodrawSIRouter = require('./routes/momodrawSI');
+const simonthlyRouter = require('./routes/simonthly');
 
 
 
@@ -228,6 +229,7 @@ app.use('/spyIA5', spyIA5Router);
 app.use('/momostats', momostatsRouter);
 app.use('/momodraw', momodrawRouter);
 app.use('/momodrawSI', momodrawSIRouter);
+app.use('/simonthly', simonthlyRouter);
 
 
 
