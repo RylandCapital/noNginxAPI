@@ -125,6 +125,10 @@ const momodrawSIRouter = require('./routes/momodrawSI');
 const simonthlyRouter = require('./routes/simonthly');
 const siyearlyRouter = require('./routes/siyearly');
 const sistatsRouter = require('./routes/sistats');
+const momodrawASRouter = require('./routes/momodrawAS');
+const asmonthlyRouter = require('./routes/asmonthly');
+const asyearlyRouter = require('./routes/asyearly');
+const asstatsRouter = require('./routes/asstats');
 
 
 
@@ -234,6 +238,10 @@ app.use('/momodrawSI', momodrawSIRouter);
 app.use('/simonthly', simonthlyRouter);
 app.use('/siyearly', siyearlyRouter);
 app.use('/sistats', sistatsRouter);
+app.use('/momodrawAS', momodrawASRouter);
+app.use('/asmonthly', asmonthlyRouter);
+app.use('/asyearly', asyearlyRouter);
+app.use('/asstats', asstatsRouter);
 
 
 
