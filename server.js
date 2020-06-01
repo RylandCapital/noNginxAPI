@@ -130,6 +130,7 @@ const momodrawASRouter = require('./routes/momodrawAS');
 const asmonthlyRouter = require('./routes/asmonthly');
 const asyearlyRouter = require('./routes/asyearly');
 const asstatsRouter = require('./routes/asstats');
+const vxx2sdRouter = require('./routes/vxx2sd');
 
 
 
@@ -244,6 +245,7 @@ app.use('/momodrawAS', momodrawASRouter);
 app.use('/asmonthly', asmonthlyRouter);
 app.use('/asyearly', asyearlyRouter);
 app.use('/asstats', asstatsRouter);
+app.use('/vxx2sd', vxx2sdRouter);
 
 
 
