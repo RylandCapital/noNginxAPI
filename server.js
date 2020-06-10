@@ -131,6 +131,7 @@ const asmonthlyRouter = require('./routes/asmonthly');
 const asyearlyRouter = require('./routes/asyearly');
 const asstatsRouter = require('./routes/asstats');
 const vxx2sdRouter = require('./routes/vxx2sd');
+const dowscoresRouter = require('./routes/dowscores');
 
 
 
@@ -246,7 +247,7 @@ app.use('/asmonthly', asmonthlyRouter);
 app.use('/asyearly', asyearlyRouter);
 app.use('/asstats', asstatsRouter);
 app.use('/vxx2sd', vxx2sdRouter);
-
+app.use('/dowscores', dowscoresRouter);
 
 
 app.listen(port, () => {
