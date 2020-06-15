@@ -132,8 +132,10 @@ const asyearlyRouter = require('./routes/asyearly');
 const asstatsRouter = require('./routes/asstats');
 const vxx2sdRouter = require('./routes/vxx2sd');
 const dowscoresRouter = require('./routes/dowscores');
-
-
+const momodrawEDIPRouter = require('./routes/momodrawEDIP');
+const edipmonthlyRouter = require('./routes/edipmonthly');
+const edipyearlyRouter = require('./routes/edipyearly');
+const edipstatsRouter = require('./routes/edipstats');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -248,7 +250,10 @@ app.use('/asyearly', asyearlyRouter);
 app.use('/asstats', asstatsRouter);
 app.use('/vxx2sd', vxx2sdRouter);
 app.use('/dowscores', dowscoresRouter);
-
+app.use('/momodrawEDIP', momodrawEDIPRouter);
+app.use('/edipmonthly', edipmonthlyRouter);
+app.use('/edipyearly', edipyearlyRouter);
+app.use('/edipstats', edipstatsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
