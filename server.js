@@ -136,6 +136,10 @@ const momodrawEDIPRouter = require('./routes/momodrawEDIP');
 const edipmonthlyRouter = require('./routes/edipmonthly');
 const edipyearlyRouter = require('./routes/edipyearly');
 const edipstatsRouter = require('./routes/edipstats');
+const momodrawPONERouter = require('./routes/momodrawPONE');
+const ponemonthlyRouter = require('./routes/ponemonthly');
+const poneyearlyRouter = require('./routes/poneyearly');
+const ponestatsRouter = require('./routes/ponestats');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -254,6 +258,10 @@ app.use('/momodrawEDIP', momodrawEDIPRouter);
 app.use('/edipmonthly', edipmonthlyRouter);
 app.use('/edipyearly', edipyearlyRouter);
 app.use('/edipstats', edipstatsRouter);
+app.use('/momodrawPONE', momodrawPONERouter);
+app.use('/ponemonthly', ponemonthlyRouter);
+app.use('/poneyearly', poneyearlyRouter);
+app.use('/ponestats', ponestatsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
