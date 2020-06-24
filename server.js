@@ -140,6 +140,9 @@ const momodrawPONERouter = require('./routes/momodrawPONE');
 const ponemonthlyRouter = require('./routes/ponemonthly');
 const poneyearlyRouter = require('./routes/poneyearly');
 const ponestatsRouter = require('./routes/ponestats');
+const covereddfRouter = require('./routes/covereddf');
+const toptendfRouter = require('./routes/toptendf');
+const optionstatsRouter = require('./routes/optionstats');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -262,6 +265,9 @@ app.use('/momodrawPONE', momodrawPONERouter);
 app.use('/ponemonthly', ponemonthlyRouter);
 app.use('/poneyearly', poneyearlyRouter);
 app.use('/ponestats', ponestatsRouter);
+app.use('/covereddf', covereddfRouter);
+app.use('/toptendf', toptendfRouter);
+app.use('/optionstats', optionstatsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
