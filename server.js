@@ -143,6 +143,8 @@ const ponestatsRouter = require('./routes/ponestats');
 const covereddfRouter = require('./routes/covereddf');
 const toptendfRouter = require('./routes/toptendf');
 const optionstatsRouter = require('./routes/optionstats');
+const twosddfRouter = require('./routes/twosddf');
+const twosddfactiveRouter = require('./routes/twosddfactive');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -268,6 +270,8 @@ app.use('/ponestats', ponestatsRouter);
 app.use('/covereddf', covereddfRouter);
 app.use('/toptendf', toptendfRouter);
 app.use('/optionstats', optionstatsRouter);
+app.use('/twosddf', twosddfRouter);
+app.use('/twosddfactive', twosddfactiveRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
