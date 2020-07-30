@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const hawkmonthlySchema = new Schema({
+const hawkstatsSchema = new Schema({
     _id: { type: Number, required: false },
 }, {
   timestamps: true,
-  collection: 'hawkmonthly'
+  collection: 'hawkstats'
 });
 
-const hawkmonthly = mongoose.model('hawkmonthly', hawkmonthlySchema);
+const hawkstats = mongoose.model('hawkstats', hawkstatsSchema);
 
-module.exports = hawkmonthly;
+module.exports = hawkstats;
