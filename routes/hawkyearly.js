@@ -1,9 +1,9 @@
 const router = require('express').Router();
-let hawkmonthly = require('../models/hawkmonthly.model');
+let hawkyearly = require('../models/hawkyearly.model');
 
 router.route('/').get((req, res) => {
-    hawkmonthly.find()
-        .then(hawkmonthly => res.json(hawkmonthly))
+    hawkyearly.find()
+        .then(hawkyearly => res.json(hawkyearly))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
