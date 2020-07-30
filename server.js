@@ -145,6 +145,10 @@ const toptendfRouter = require('./routes/toptendf');
 const optionstatsRouter = require('./routes/optionstats');
 const twosddfRouter = require('./routes/twosddf');
 const twosddfactiveRouter = require('./routes/twosddfactive');
+const momodrawHAWKRouter = require('./routes/momodrawHAWK');
+const hawkmonthlyRouter = require('./routes/hawkmonthly');
+const hawkyearlyRouter = require('./routes/hawkyearly');
+const hawkstatsRouter = require('./routes/hawkstats');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -272,6 +276,10 @@ app.use('/toptendf', toptendfRouter);
 app.use('/optionstats', optionstatsRouter);
 app.use('/twosddf', twosddfRouter);
 app.use('/twosddfactive', twosddfactiveRouter);
+app.use('/momodrawHAWK', momodrawHAWKRouter);
+app.use('/hawkmonthly', hawkmonthlyRouter);
+app.use('/hawkyearly', hawkyearlyRouter);
+app.use('/hawkstats', hawkstatsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
