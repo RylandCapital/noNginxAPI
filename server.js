@@ -149,6 +149,7 @@ const momodrawHAWKRouter = require('./routes/momodrawHAWK');
 const hawkmonthlyRouter = require('./routes/hawkmonthly');
 const hawkyearlyRouter = require('./routes/hawkyearly');
 const hawkstatsRouter = require('./routes/hawkstats');
+const momoallohawkRouter = require('./routes/momoallohawk');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -280,6 +281,7 @@ app.use('/momodrawHAWK', momodrawHAWKRouter);
 app.use('/hawkmonthly', hawkmonthlyRouter);
 app.use('/hawkyearly', hawkyearlyRouter);
 app.use('/hawkstats', hawkstatsRouter);
+app.use('/momoallohawk', momoallohawkRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
