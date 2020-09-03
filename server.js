@@ -151,7 +151,8 @@ const hawkyearlyRouter = require('./routes/hawkyearly');
 const hawkstatsRouter = require('./routes/hawkstats');
 const momoallohawkRouter = require('./routes/momoallohawk');
 const dyvolmaster = require('./routes/dyvolmaster');
-
+const aggsector = require('./routes/aggsector');
+const agggroup = require('./routes/agggroup');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -285,6 +286,8 @@ app.use('/hawkyearly', hawkyearlyRouter);
 app.use('/hawkstats', hawkstatsRouter);
 app.use('/momoallohawk', momoallohawkRouter);
 app.use('/dyvolmaster', dyvolmaster);
+app.use('/aggsector', aggsector);
+app.use('/agggroup', agggroup);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
