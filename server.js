@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose')
 const path = require('path')
+const bodyParser = require("body-parser");
+const passport = require("passport");
 
 require('dotenv').config();
 
@@ -288,6 +290,19 @@ app.use('/momoallohawk', momoallohawkRouter);
 app.use('/dyvolmaster', dyvolmaster);
 app.use('/aggsector', aggsector);
 app.use('/agggroup', agggroup);
+
+
+// sign up form integration
+const usersRouter = require('./routes/users.js');
+//app.use(passport.initialize());
+//require("./config/passport")(passport);
+app.use('/users', usersRouter);
+app.use(
+  bodyParser.urlencoded({
+    extended: false
+  })
+);
+
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
