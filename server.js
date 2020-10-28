@@ -3,7 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose')
 const path = require('path')
 const bodyParser = require("body-parser");
-const passport = require("passport");
+//const passport = require("passport");
 
 require('dotenv').config();
 
@@ -155,6 +155,7 @@ const momoallohawkRouter = require('./routes/momoallohawk');
 const dyvolmaster = require('./routes/dyvolmaster');
 const aggsector = require('./routes/aggsector');
 const agggroup = require('./routes/agggroup');
+const worldview = require('./routes/worldview');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -290,6 +291,7 @@ app.use('/momoallohawk', momoallohawkRouter);
 app.use('/dyvolmaster', dyvolmaster);
 app.use('/aggsector', aggsector);
 app.use('/agggroup', agggroup);
+app.use('/worldview', worldview);
 
 
 // sign up form integration
