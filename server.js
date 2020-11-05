@@ -156,6 +156,7 @@ const dyvolmaster = require('./routes/dyvolmaster');
 const aggsector = require('./routes/aggsector');
 const agggroup = require('./routes/agggroup');
 const worldview = require('./routes/worldview');
+const aggrid_pi = require('./routes/aggrid_pi');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -292,6 +293,7 @@ app.use('/dyvolmaster', dyvolmaster);
 app.use('/aggsector', aggsector);
 app.use('/agggroup', agggroup);
 app.use('/worldview', worldview);
+app.use('/aggrid', aggrid_pi);
 
 
 // sign up form integration
