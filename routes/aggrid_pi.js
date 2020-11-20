@@ -1,5 +1,6 @@
 const router = require('express').Router();
 let aggrid_pi = require('../models/aggrid_pi.model');
+let aggrid_pib = require('../models/aggrid_pi.tickers.model');
 
 router.route('/world').get((req, res) => {
     aggrid_pi['world'].find().lean()
@@ -102,6 +103,78 @@ router.route('/utilities').get((req, res) => {
         .then(aggrid_pi => res.json(aggrid_pi))
         .catch(err => res.status(400).json('Error: ' + err));
 });
+
+
+
+
+
+//ticker agrid1b
+router.route('/tickers/materials').get((req, res) => {
+    aggrid_pib['materialsb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/consumer_staples').get((req, res) => {
+    aggrid_pib['consumer_staplesb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/consumer_discretionary').get((req, res) => {
+    aggrid_pib['consumer_discretionaryb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/energy').get((req, res) => {
+    aggrid_pib['energyb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/financials').get((req, res) => {
+    aggrid_pib['financialsb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/health_care').get((req, res) => {
+    aggrid_pib['health_careb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/industrials').get((req, res) => {
+    aggrid_pib['industrialsb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/real_estate').get((req, res) => {
+    aggrid_pib['real_estateb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/information_technology').get((req, res) => {
+    aggrid_pib['information_technologyb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/communication_services').get((req, res) => {
+    aggrid_pib['communication_servicesb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/tickers/utilities').get((req, res) => {
+    aggrid_pib['utilitiesb'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
 
 
 module.exports = router;
