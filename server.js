@@ -159,6 +159,7 @@ const worldview = require('./routes/worldview');
 const aggrid_pi = require('./routes/aggrid_pi');
 const aggrid2_pi = require('./routes/aggrid2_pi');
 const aggsector_pi = require('./routes/aggsector_pi');
+const aggrid2_cfg_pi = require('./routes/aggrid2_cfg_pi');
 
 app.use(express.static(path.join(__dirname, "client/build")))
 app.use('/spx', spxRouter);
@@ -298,6 +299,7 @@ app.use('/worldview', worldview);
 app.use('/aggrid', aggrid_pi);
 app.use('/aggrid2', aggrid2_pi);
 app.use('/charts', aggsector_pi);
+app.use('/aggrid2_cfg', aggrid2_cfg_pi);
 
 
 // sign up form integration
