@@ -1,9 +1,9 @@
 const router = require('express').Router();
-let aggrid2_cfg_pi = require('../models/aggrid2_cfg_pi.model');
+let aggrid2_cfg_pi_group = require('../models/aggrid2_cfg_pi_group.model');
 
 router.route('/').get((req, res) => {
-    aggrid2_cfg_pi.find().lean()
-        .then(aggrid2_cfg_pi => res.json(aggrid2_cfg_pi))
+    aggrid2_cfg_pi_group.find().lean()
+        .then(aggrid2_cfg_pi_group => res.json(aggrid2_cfg_pi_group))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
