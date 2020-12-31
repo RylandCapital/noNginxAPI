@@ -2,41 +2,10 @@ const mongoose = require('mongoose');
 const { send } = require('process');
 const Schema = mongoose.Schema;
 
-/*const worldSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'world'
-});
 
-const intermarketSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'intermarket'
-});
+//these endpoints are for tradingview charts 
 
-const size_styleSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'size__style'
-});
-
-const cw_sectorSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'cw_sector'
-});
-
-const ew_sectorSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'ew_sector'
-});
-
-const sc_sectorSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'sc_sector'
-});*/
+//Sectors
 
 const materialsSchema = new Schema({
 }, {
@@ -105,12 +74,163 @@ const utilitiesSchema = new Schema({
 });
 
 
-/*const world = mongoose.model('world', worldSchema);
-const intermarket = mongoose.model('intermarket', intermarketSchema);
-const size_style = mongoose.model('size_style', size_styleSchema);
-const cw_sector = mongoose.model('cw_sector', cw_sectorSchema);
-const ew_sector = mongoose.model('ew_sector', ew_sectorSchema);
-const sc_sector = mongoose.model('sc_sector', sc_sectorSchema);*/
+
+//GROUPS
+
+const automobilescomponentsSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'automobilescomponents'
+});
+
+const banksSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'banks'
+});
+
+const capitalgoodsSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'capitalgoods'
+});
+
+const commercialprofessionalservicesSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'commercialprofessionalservices'
+});
+
+const communicationservicesSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'communicationservices'
+});
+
+const consumerdurablesapparelSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'consumerdurablesapparel'
+});
+
+const consumerservicesSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'consumerservices'
+});
+
+const diversifiedfinancialsSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'diversifiedfinancials'
+});
+
+const energygroupSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'energygroup'
+});
+
+const foodstaplesretailingSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'foodstaplesretailing'
+});
+
+const foodbeveragetobaccoSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'foodbeveragetobacco'
+});
+
+const healthcareequipmentservicesSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'healthcareequipmentservices'
+});
+
+const householdpersonalproductsSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'householdpersonalproducts'
+});
+
+const insuranceSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'insurance'
+});
+
+const materialsgroupSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'materialsgroup'
+});
+
+const mediaSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'media'
+});
+
+const mediaentertainmentSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'mediaentertainment'
+});
+
+const pharmaceuticalsbiotechnologylifesciencesSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'pharmaceuticalsbiotechnologylifesciences'
+});
+
+const realestategroupSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'realestategroup'
+});
+
+const retailingSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'retailing'
+});
+
+const semiconductorssemiconductorequipmentSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'semiconductorssemiconductorequipment'
+});
+
+const softwareservicesSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'softwareservices'
+});
+
+
+const technologyhardwareequipmentSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'technologyhardwareequipment'
+});
+
+const transportationSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'transportation'
+});
+
+const utilitiesgroupSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'utilitiesgroup'
+});
+
+
+
+//Sectors
 const materials_chart = mongoose.model('materials_chart', materialsSchema);
 const consumer_staples_chart  = mongoose.model('consumer_staples_chart', consumer_staplesSchema);
 const consumer_discretionary_chart  = mongoose.model('consumer_discretionary_chart', consumer_discretionarySchema);
@@ -124,12 +244,36 @@ const communication_services_chart  = mongoose.model('communication_services_cha
 const utilities_chart  = mongoose.model('utilities_chart', utilitiesSchema);
 
 
-module.exports = {/*world,
-  intermarket,
-  size_style,
-  cw_sector,
-  ew_sector,
-  sc_sector,*/
+//Groups
+const automobilescomponents  = mongoose.model('automobilescomponents', automobilescomponentsSchema);
+const banks  = mongoose.model('banks', banksSchema);
+const capitalgoods  = mongoose.model('capitalgoods', capitalgoodsSchema);
+const commercialprofessionalservices  = mongoose.model('commercialprofessionalservices', commercialprofessionalservicesSchema);
+const communicationservices  = mongoose.model('communicationservices', communicationservicesSchema);
+const consumerdurablesapparel  = mongoose.model('consumerdurablesapparel', consumerdurablesapparelSchema);
+const consumerservices  = mongoose.model('consumerservices', consumerservicesSchema);
+const diversifiedfinancials  = mongoose.model('diversifiedfinancials', diversifiedfinancialsSchema);
+const energygroup  = mongoose.model('energygroup', energygroupSchema);
+const foodstaplesretailing  = mongoose.model('foodstaplesretailing', foodstaplesretailingSchema);
+const foodbeveragetobacco  = mongoose.model('foodbeveragetobacco', foodbeveragetobaccoSchema);
+const healthcareequipmentservices  = mongoose.model('healthcareequipmentservices', healthcareequipmentservicesSchema);
+const householdpersonalproducts  = mongoose.model('householdpersonalproducts', householdpersonalproductsSchema);
+const insurance  = mongoose.model('insurance', insuranceSchema);
+const materialsgroup  = mongoose.model('materialsgroup', materialsgroupSchema);
+const media  = mongoose.model('media', mediaSchema);
+const mediaentertainment  = mongoose.model('mediaentertainment', mediaentertainmentSchema);
+const pharmaceuticalsbiotechnologylifesciences  = mongoose.model('pharmaceuticalsbiotechnologylifesciences', pharmaceuticalsbiotechnologylifesciencesSchema);
+const realestategroup  = mongoose.model('realestategroup', realestategroupSchema);
+const retailing  = mongoose.model('retailing', retailingSchema);
+const semiconductorssemiconductorequipment  = mongoose.model('semiconductorssemiconductorequipment', semiconductorssemiconductorequipmentSchema);
+const softwareservices  = mongoose.model('softwareservices', softwareservicesSchema);
+const technologyhardwareequipment  = mongoose.model('technologyhardwareequipment', technologyhardwareequipmentSchema);
+const transportation  = mongoose.model('transportation', transportationSchema);
+const utilitiesgroup  = mongoose.model('utilitiesgroup', utilitiesgroupSchema);
+
+
+
+module.exports = {
   materials_chart ,
   consumer_staples_chart ,
   consumer_discretionary_chart ,
@@ -140,5 +284,30 @@ module.exports = {/*world,
   real_estate_chart ,
   information_technology_chart ,
   communication_services_chart ,
-  utilities_chart 
+  utilities_chart,
+  automobilescomponents,
+  banks,
+  capitalgoods,
+  commercialprofessionalservices,
+  communicationservices,
+  consumerdurablesapparel,
+  consumerservices,
+  diversifiedfinancials,
+  energygroup,
+  foodstaplesretailing,
+  foodbeveragetobacco,
+  healthcareequipmentservices,
+  householdpersonalproducts,
+  insurance,
+  materialsgroup,
+  media,
+  mediaentertainment,
+  pharmaceuticalsbiotechnologylifesciences,
+  realestategroup,
+  retailing,
+  semiconductorssemiconductorequipment,
+  softwareservices,
+  technologyhardwareequipment,
+  transportation,
+  utilitiesgroup
 }

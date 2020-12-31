@@ -161,6 +161,10 @@ const aggrid2_pi = require('./routes/aggrid2_pi');
 const aggsector_pi = require('./routes/aggsector_pi');
 const aggrid2_cfg_pi = require('./routes/aggrid2_cfg_pi');
 const aggrid1EW_pi = require('./routes/aggrid1EW_pi');
+const aggrid1EW_pi_group = require('./routes/aggrid1EW_group.pi');
+const aggrid2_pi_group = require('./routes/aggrid2_pi_group');
+const aggrid2_cfg_pi_group = require('./routes/aggrid2_cfg_pi_group');
+const ratio = require('./routes/ratio');
 
 
 
@@ -304,6 +308,10 @@ app.use('/aggrid2', aggrid2_pi);
 app.use('/charts', aggsector_pi);
 app.use('/aggrid2_cfg', aggrid2_cfg_pi);
 app.use('/aggridEW1_pi', aggrid1EW_pi);
+app.use('/aggridEW1_pi_group', aggrid1EW_pi_group);
+app.use('/aggrid2_pi_group', aggrid2_pi_group);
+app.use('/aggrid2_cfg_pi_group', aggrid2_cfg_pi_group);
+app.use('/ratio', ratio);
 
 
 // sign up form integration

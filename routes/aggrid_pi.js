@@ -108,7 +108,7 @@ router.route('/utilities').get((req, res) => {
 
 
 
-//ticker agrid1b
+//ticker agrid1b - for sectors 
 router.route('/tickers/materials').get((req, res) => {
     aggrid_pib['materialsb'].find().lean()
         .then(aggrid_pi => res.json(aggrid_pi))
@@ -175,6 +175,32 @@ router.route('/tickers/utilities').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+
+router.route('/tickers/automobilescomponents').get((req, res) => {aggrid_pi['automobilescomponentsb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/banks').get((req, res) => {aggrid_pi['banksb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/capitalgoods').get((req, res) => {aggrid_pi['capitalgoodsb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/commercialprofessionalservices').get((req, res) => {aggrid_pi['commercialprofessionalservicesb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/communicationservices').get((req, res) => {aggrid_pi['communicationservicesb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/consumerdurablesapparel').get((req, res) => {aggrid_pi['consumerdurablesapparelb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/consumerservices').get((req, res) => {aggrid_pi['consumerservicesb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/diversifiedfinancials').get((req, res) => {aggrid_pi['diversifiedfinancialsb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/energygroup').get((req, res) => {aggrid_pi['energygroupb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/foodstaplesretailing').get((req, res) => {aggrid_pi['foodstaplesretailingb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/foodbeveragetobacco').get((req, res) => {aggrid_pi['foodbeveragetobaccob'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/healthcareequipmentservices').get((req, res) => {aggrid_pi['healthcareequipmentservicesb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/householdpersonalproducts').get((req, res) => {aggrid_pi['householdpersonalproductsb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/insurance').get((req, res) => {aggrid_pi['insuranceb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/materialsgroup').get((req, res) => {aggrid_pi['materialsgroupb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/media').get((req, res) => {aggrid_pi['mediab'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/mediaentertainment').get((req, res) => {aggrid_pi['mediaentertainmentb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/pharmaceuticalsbiotechnologylifesciences').get((req, res) => {aggrid_pi['pharmaceuticalsbiotechnologylifesciencesb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/realestategroup').get((req, res) => {aggrid_pi['realestategroupb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/retailing').get((req, res) => {aggrid_pi['retailingb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/semiconductorssemiconductorequipment').get((req, res) => {aggrid_pi['semiconductorssemiconductorequipmentb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/softwareservices').get((req, res) => {aggrid_pi['softwareservicesb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/technologyhardwareequipment').get((req, res) => {aggrid_pi['technologyhardwareequipmentb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/transportation').get((req, res) => {aggrid_pi['transportationb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/utilitiesgroup').get((req, res) => {aggrid_pi['utilitiesgroupb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 
 
 module.exports = router;

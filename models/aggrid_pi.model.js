@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 const { send } = require('process');
 const Schema = mongoose.Schema;
 
+
+// these are AGgrid 1 for the sectors with their ETFs as ROWS
 const worldSchema = new Schema({
 }, {
   timestamps: true,
