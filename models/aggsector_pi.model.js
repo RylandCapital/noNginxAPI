@@ -76,157 +76,58 @@ const utilitiesSchema = new Schema({
 
 
 //GROUPS
-
-const automobilescomponentsSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'automobilescomponents'
-});
-
-const banksSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'banks'
-});
-
-const capitalgoodsSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'capitalgoods'
-});
-
-const commercialprofessionalservicesSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'commercialprofessionalservices'
-});
-
-const communicationservicesSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'communicationservices'
-});
-
-const consumerdurablesapparelSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'consumerdurablesapparel'
-});
-
-const consumerservicesSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'consumerservices'
-});
-
-const diversifiedfinancialsSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'diversifiedfinancials'
-});
-
-const energygroupSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'energygroup'
-});
-
-const foodstaplesretailingSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'foodstaplesretailing'
-});
-
-const foodbeveragetobaccoSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'foodbeveragetobacco'
-});
-
-const healthcareequipmentservicesSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'healthcareequipmentservices'
-});
-
-const householdpersonalproductsSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'householdpersonalproducts'
-});
-
-const insuranceSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'insurance'
-});
-
-const materialsgroupSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'materialsgroup'
-});
-
-const mediaSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'media'
-});
-
-const mediaentertainmentSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'mediaentertainment'
-});
-
-const pharmaceuticalsbiotechnologylifesciencesSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'pharmaceuticalsbiotechnologylifesciences'
-});
-
-const realestategroupSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'realestategroup'
-});
-
-const retailingSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'retailing'
-});
-
-const semiconductorssemiconductorequipmentSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'semiconductorssemiconductorequipment'
-});
-
-const softwareservicesSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'softwareservices'
-});
+const interactivemediaentertainmentSchema = new Schema({}, {timestamps: true, collection:'interactivemediaentertainment'});
+const telecomSchema = new Schema({}, {timestamps: true, collection:'telecom'});
+const mediaentertainmentSchema = new Schema({}, {timestamps: true, collection:'mediaentertainment'});
+const apparelluxurygoodsSchema = new Schema({}, {timestamps: true, collection:'apparelluxurygoods'});
+const automobileSchema = new Schema({}, {timestamps: true, collection:'automobile'});
+const hotelrestaurantleisureSchema = new Schema({}, {timestamps: true, collection:'hotelrestaurantleisure'});
+const householddurablesSchema = new Schema({}, {timestamps: true, collection:'householddurables'});
+const internetdirectmarketingSchema = new Schema({}, {timestamps: true, collection:'internetdirectmarketing'});
+const leisuregoodsSchema = new Schema({}, {timestamps: true, collection:'leisuregoods'});
+const retailSchema = new Schema({}, {timestamps: true, collection:'retail'});
+const foodbeveragetobaccoSchema = new Schema({}, {timestamps: true, collection:'foodbeveragetobacco'});
+const foodstaplesretailingSchema = new Schema({}, {timestamps: true, collection:'foodstaplesretailing'});
+const householdpersonalproductsSchema = new Schema({}, {timestamps: true, collection:'householdpersonalproducts'});
+const oilgasconsumablefuelsSchema = new Schema({}, {timestamps: true, collection:'oilgasconsumablefuels'});
+const oilgasequipmentservicesSchema = new Schema({}, {timestamps: true, collection:'oilgasequipmentservices'});
+const oilgasexplorationproductionSchema = new Schema({}, {timestamps: true, collection:'oilgasexplorationproduction'});
+const oilgasstoragetransportationSchema = new Schema({}, {timestamps: true, collection:'oilgasstoragetransportation'});
+const banksSchema = new Schema({}, {timestamps: true, collection:'banks'});
+const brokeragecapitalmarketsSchema = new Schema({}, {timestamps: true, collection:'brokeragecapitalmarkets'});
+const diversifiedfinancialcreditservicesSchema = new Schema({}, {timestamps: true, collection:'diversifiedfinancialcreditservices'});
+const insuranceSchema = new Schema({}, {timestamps: true, collection:'insurance'});
+const regionalbanksSchema = new Schema({}, {timestamps: true, collection:'regionalbanks'});
+const thriftsmortgagefinanceSchema = new Schema({}, {timestamps: true, collection:'thriftsmortgagefinance'});
+const biotechnologySchema = new Schema({}, {timestamps: true, collection:'biotechnology'});
+const healthcareservicesSchema = new Schema({}, {timestamps: true, collection:'healthcareservices'});
+const medicalequipmentdevicessuppliesSchema = new Schema({}, {timestamps: true, collection:'medicalequipmentdevicessupplies'});
+const pharmaceuticalsSchema = new Schema({}, {timestamps: true, collection:'pharmaceuticals'});
+const aerospacedefenseSchema = new Schema({}, {timestamps: true, collection:'aerospacedefense'});
+const commercialprofessionalservicesSchema = new Schema({}, {timestamps: true, collection:'commercialprofessionalservices'});
+const constructionmaterialsSchema = new Schema({}, {timestamps: true, collection:'constructionmaterials'});
+const industrialgoodsSchema = new Schema({}, {timestamps: true, collection:'industrialgoods'});
+const machinerySchema = new Schema({}, {timestamps: true, collection:'machinery'});
+const transportationSchema = new Schema({}, {timestamps: true, collection:'transportation'});
+const hardwareequipmentSchema = new Schema({}, {timestamps: true, collection:'hardwareequipment'});
+const itservicesSchema = new Schema({}, {timestamps: true, collection:'itservices'});
+const semiconductorsSchema = new Schema({}, {timestamps: true, collection:'semiconductors'});
+const softwareSchema = new Schema({}, {timestamps: true, collection:'software'});
+const basicmaterialsSchema = new Schema({}, {timestamps: true, collection:'basicmaterials'});
+const industrialmetalsSchema = new Schema({}, {timestamps: true, collection:'industrialmetals'});
+const preciousmetalsSchema = new Schema({}, {timestamps: true, collection:'preciousmetals'});
+const commercialreitsSchema = new Schema({}, {timestamps: true, collection:'commercialreits'});
+const realestateservicesSchema = new Schema({}, {timestamps: true, collection:'realestateservices'});
+const residentialmortgagesSchema = new Schema({}, {timestamps: true, collection:'residentialmortgages'});
+const retailreitsSchema = new Schema({}, {timestamps: true, collection:'retailreits'});
+const electricSchema = new Schema({}, {timestamps: true, collection:'electric'});
+const gasSchema = new Schema({}, {timestamps: true, collection:'gas'});
+const independentpowerrenewablesSchema = new Schema({}, {timestamps: true, collection:'independentpowerrenewables'});
+const multilineutilitiesSchema = new Schema({}, {timestamps: true, collection:'multilineutilities'});
+const waterSchema = new Schema({}, {timestamps: true, collection:'water'});
 
 
-const technologyhardwareequipmentSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'technologyhardwareequipment'
-});
 
-const transportationSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'transportation'
-});
-
-const utilitiesgroupSchema = new Schema({
-}, {
-  timestamps: true,
-  collection: 'utilitiesgroup'
-});
 
 
 
@@ -245,32 +146,55 @@ const utilities_chart  = mongoose.model('utilities_chart', utilitiesSchema);
 
 
 //Groups
-const automobilescomponents  = mongoose.model('automobilescomponents', automobilescomponentsSchema);
-const banks  = mongoose.model('banks', banksSchema);
-const capitalgoods  = mongoose.model('capitalgoods', capitalgoodsSchema);
-const commercialprofessionalservices  = mongoose.model('commercialprofessionalservices', commercialprofessionalservicesSchema);
-const communicationservices  = mongoose.model('communicationservices', communicationservicesSchema);
-const consumerdurablesapparel  = mongoose.model('consumerdurablesapparel', consumerdurablesapparelSchema);
-const consumerservices  = mongoose.model('consumerservices', consumerservicesSchema);
-const diversifiedfinancials  = mongoose.model('diversifiedfinancials', diversifiedfinancialsSchema);
-const energygroup  = mongoose.model('energygroup', energygroupSchema);
-const foodstaplesretailing  = mongoose.model('foodstaplesretailing', foodstaplesretailingSchema);
-const foodbeveragetobacco  = mongoose.model('foodbeveragetobacco', foodbeveragetobaccoSchema);
-const healthcareequipmentservices  = mongoose.model('healthcareequipmentservices', healthcareequipmentservicesSchema);
-const householdpersonalproducts  = mongoose.model('householdpersonalproducts', householdpersonalproductsSchema);
-const insurance  = mongoose.model('insurance', insuranceSchema);
-const materialsgroup  = mongoose.model('materialsgroup', materialsgroupSchema);
-const media  = mongoose.model('media', mediaSchema);
+const interactivemediaentertainment  = mongoose.model('interactivemediaentertainment', interactivemediaentertainmentSchema);
+const telecom  = mongoose.model('telecom', telecomSchema);
 const mediaentertainment  = mongoose.model('mediaentertainment', mediaentertainmentSchema);
-const pharmaceuticalsbiotechnologylifesciences  = mongoose.model('pharmaceuticalsbiotechnologylifesciences', pharmaceuticalsbiotechnologylifesciencesSchema);
-const realestategroup  = mongoose.model('realestategroup', realestategroupSchema);
-const retailing  = mongoose.model('retailing', retailingSchema);
-const semiconductorssemiconductorequipment  = mongoose.model('semiconductorssemiconductorequipment', semiconductorssemiconductorequipmentSchema);
-const softwareservices  = mongoose.model('softwareservices', softwareservicesSchema);
-const technologyhardwareequipment  = mongoose.model('technologyhardwareequipment', technologyhardwareequipmentSchema);
+const apparelluxurygoods  = mongoose.model('apparelluxurygoods', apparelluxurygoodsSchema);
+const automobile  = mongoose.model('automobile', automobileSchema);
+const hotelrestaurantleisure  = mongoose.model('hotelrestaurantleisure', hotelrestaurantleisureSchema);
+const householddurables  = mongoose.model('householddurables', householddurablesSchema);
+const internetdirectmarketing  = mongoose.model('internetdirectmarketing', internetdirectmarketingSchema);
+const leisuregoods  = mongoose.model('leisuregoods', leisuregoodsSchema);
+const retail  = mongoose.model('retail', retailSchema);
+const foodbeveragetobacco  = mongoose.model('foodbeveragetobacco', foodbeveragetobaccoSchema);
+const foodstaplesretailing  = mongoose.model('foodstaplesretailing', foodstaplesretailingSchema);
+const householdpersonalproducts  = mongoose.model('householdpersonalproducts', householdpersonalproductsSchema);
+const oilgasconsumablefuels  = mongoose.model('oilgasconsumablefuels', oilgasconsumablefuelsSchema);
+const oilgasequipmentservices  = mongoose.model('oilgasequipmentservices', oilgasequipmentservicesSchema);
+const oilgasexplorationproduction  = mongoose.model('oilgasexplorationproduction', oilgasexplorationproductionSchema);
+const oilgasstoragetransportation  = mongoose.model('oilgasstoragetransportation', oilgasstoragetransportationSchema);
+const banks  = mongoose.model('banks', banksSchema);
+const brokeragecapitalmarkets  = mongoose.model('brokeragecapitalmarkets', brokeragecapitalmarketsSchema);
+const diversifiedfinancialcreditservices  = mongoose.model('diversifiedfinancialcreditservices', diversifiedfinancialcreditservicesSchema);
+const insurance  = mongoose.model('insurance', insuranceSchema);
+const regionalbanks  = mongoose.model('regionalbanks', regionalbanksSchema);
+const thriftsmortgagefinance  = mongoose.model('thriftsmortgagefinance', thriftsmortgagefinanceSchema);
+const biotechnology  = mongoose.model('biotechnology', biotechnologySchema);
+const healthcareservices  = mongoose.model('healthcareservices', healthcareservicesSchema);
+const medicalequipmentdevicessupplies  = mongoose.model('medicalequipmentdevicessupplies', medicalequipmentdevicessuppliesSchema);
+const pharmaceuticals  = mongoose.model('pharmaceuticals', pharmaceuticalsSchema);
+const aerospacedefense  = mongoose.model('aerospacedefense', aerospacedefenseSchema);
+const commercialprofessionalservices  = mongoose.model('commercialprofessionalservices', commercialprofessionalservicesSchema);
+const constructionmaterials  = mongoose.model('constructionmaterials', constructionmaterialsSchema);
+const industrialgoods  = mongoose.model('industrialgoods', industrialgoodsSchema);
+const machinery  = mongoose.model('machinery', machinerySchema);
 const transportation  = mongoose.model('transportation', transportationSchema);
-const utilitiesgroup  = mongoose.model('utilitiesgroup', utilitiesgroupSchema);
-
+const hardwareequipment  = mongoose.model('hardwareequipment', hardwareequipmentSchema);
+const itservices  = mongoose.model('itservices', itservicesSchema);
+const semiconductors  = mongoose.model('semiconductors', semiconductorsSchema);
+const software  = mongoose.model('software', softwareSchema);
+const basicmaterials  = mongoose.model('basicmaterials', basicmaterialsSchema);
+const industrialmetals  = mongoose.model('industrialmetals', industrialmetalsSchema);
+const preciousmetals  = mongoose.model('preciousmetals', preciousmetalsSchema);
+const commercialreits  = mongoose.model('commercialreits', commercialreitsSchema);
+const realestateservices  = mongoose.model('realestateservices', realestateservicesSchema);
+const residentialmortgages  = mongoose.model('residentialmortgages', residentialmortgagesSchema);
+const retailreits  = mongoose.model('retailreits', retailreitsSchema);
+const electric  = mongoose.model('electric', electricSchema);
+const gas  = mongoose.model('gas', gasSchema);
+const independentpowerrenewables  = mongoose.model('independentpowerrenewables', independentpowerrenewablesSchema);
+const multilineutilities  = mongoose.model('multilineutilities', multilineutilitiesSchema);
+const water  = mongoose.model('water', waterSchema);
 
 
 module.exports = {
@@ -285,29 +209,55 @@ module.exports = {
   information_technology_chart ,
   communication_services_chart ,
   utilities_chart,
-  automobilescomponents,
-  banks,
-  capitalgoods,
-  commercialprofessionalservices,
-  communicationservices,
-  consumerdurablesapparel,
-  consumerservices,
-  diversifiedfinancials,
-  energygroup,
-  foodstaplesretailing,
-  foodbeveragetobacco,
-  healthcareequipmentservices,
-  householdpersonalproducts,
-  insurance,
-  materialsgroup,
-  media,
+  interactivemediaentertainment,
+  telecom,
   mediaentertainment,
-  pharmaceuticalsbiotechnologylifesciences,
-  realestategroup,
-  retailing,
-  semiconductorssemiconductorequipment,
-  softwareservices,
-  technologyhardwareequipment,
+  apparelluxurygoods,
+  automobile,
+  hotelrestaurantleisure,
+  householddurables,
+  internetdirectmarketing,
+  leisuregoods,
+  retail,
+  foodbeveragetobacco,
+  foodstaplesretailing,
+  householdpersonalproducts,
+  oilgasconsumablefuels,
+  oilgasequipmentservices,
+  oilgasexplorationproduction,
+  oilgasstoragetransportation,
+  banks,
+  brokeragecapitalmarkets,
+  diversifiedfinancialcreditservices,
+  insurance,
+  regionalbanks,
+  thriftsmortgagefinance,
+  biotechnology,
+  healthcareservices,
+  medicalequipmentdevicessupplies,
+  pharmaceuticals,
+  aerospacedefense,
+  commercialprofessionalservices,
+  constructionmaterials,
+  industrialgoods,
+  machinery,
   transportation,
-  utilitiesgroup
+  hardwareequipment,
+  itservices,
+  semiconductors,
+  software,
+  basicmaterials,
+  industrialmetals,
+  preciousmetals,
+  commercialreits,
+  realestateservices,
+  residentialmortgages,
+  retailreits,
+  electric,
+  gas,
+  independentpowerrenewables,
+  multilineutilities,
+  water
+  
 }
+
