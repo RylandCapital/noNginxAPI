@@ -70,6 +70,125 @@ const utilitiesbSchema = new Schema({
 });
 
 
+
+
+
+
+
+
+
+
+const materials_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'materials_sec_sub'
+});
+
+const consumer_staples_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'consumer_staples_sec_sub'
+});
+
+const consumer_discretionary_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'consumer_discretionary_sec_sub'
+});
+
+const energy_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'energy_sec_sub'
+});
+
+const financials_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'financials_sec_sub'
+});
+
+const health_care_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'health_care_sec_sub'
+});
+
+const industrials_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'industrials_sec_sub'
+});
+
+const real_estate_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'real_estate_sec_sub'
+});
+
+const information_technology_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'information_technology_sec_sub'
+});
+
+const communication_services_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'communication_services_sec_sub'
+});
+
+const utilities_sec_subSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'utilities_sec_sub'
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const interactivemediaentertainmentbSchema = new Schema({}, {timestamps: true, collection:'interactivemediaentertainmentb'});
 const telecombSchema = new Schema({}, {timestamps: true, collection:'telecomb'});
 const mediaentertainmentbSchema = new Schema({}, {timestamps: true, collection:'mediaentertainmentb'});
@@ -134,6 +253,18 @@ const real_estateb = mongoose.model('real_estateb', real_estatebSchema);
 const information_technologyb = mongoose.model('information_technologyb', information_technologybSchema);
 const communication_servicesb = mongoose.model('communication_servicesb', communication_servicesbSchema);
 const utilitiesb = mongoose.model('utilitiesb', utilitiesbSchema);
+
+const materials_sec_sub = mongoose.model('materials_sec_sub', materials_sec_subSchema);
+const consumer_staples_sec_sub = mongoose.model('consumer_staples_sec_sub', consumer_staples_sec_subSchema);
+const consumer_discretionary_sec_sub = mongoose.model('consumer_discretionary_sec_sub', consumer_discretionary_sec_subSchema);
+const energy_sec_sub = mongoose.model('energy_sec_sub', energy_sec_subSchema);
+const financials_sec_sub = mongoose.model('financials_sec_sub', financials_sec_subSchema);
+const health_care_sec_sub = mongoose.model('health_care_sec_sub', health_care_sec_subSchema);
+const industrials_sec_sub = mongoose.model('industrials_sec_sub', industrials_sec_subSchema);
+const real_estate_sec_sub = mongoose.model('real_estate_sec_sub', real_estate_sec_subSchema);
+const information_technology_sec_sub = mongoose.model('information_technology_sec_sub', information_technology_sec_subSchema);
+const communication_services_sec_sub = mongoose.model('communication_services_sec_sub', communication_services_sec_subSchema);
+const utilities_sec_sub = mongoose.model('utilities_sec_sub', utilities_sec_subSchema);
 
 
 
@@ -200,6 +331,17 @@ module.exports = {
   information_technologyb,
   communication_servicesb,
   utilitiesb,
+  materials_sec_sub,
+  consumer_staples_sec_sub,
+  consumer_discretionary_sec_sub,
+  energy_sec_sub,
+  financials_sec_sub,
+  health_care_sec_sub,
+  industrials_sec_sub,
+  real_estate_sec_sub,
+  information_technology_sec_sub,
+  communication_services_sec_sub,
+  utilities_sec_sub,
   interactivemediaentertainmentb,
   telecomb,
   mediaentertainmentb,

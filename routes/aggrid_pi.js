@@ -176,6 +176,90 @@ router.route('/tickers/utilities').get((req, res) => {
 });
 
 
+
+
+//sec_sub agrid1b - on sector page (3-7 entries)
+router.route('/secsub/materials').get((req, res) => {
+    aggrid_pib['materials_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/consumer_staples').get((req, res) => {
+    aggrid_pib['consumer_staples_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/consumer_discretionary').get((req, res) => {
+    aggrid_pib['consumer_discretionary_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/energy').get((req, res) => {
+    aggrid_pib['energy_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/financials').get((req, res) => {
+    aggrid_pib['financials_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/health_care').get((req, res) => {
+    aggrid_pib['health_care_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/industrials').get((req, res) => {
+    aggrid_pib['industrials_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/real_estate').get((req, res) => {
+    aggrid_pib['real_estate_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/information_technology').get((req, res) => {
+    aggrid_pib['information_technology_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/communication_services').get((req, res) => {
+    aggrid_pib['communication_services_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/secsub/utilities').get((req, res) => {
+    aggrid_pib['utilities_sec_sub'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 router.route('/tickers/interactivemediaentertainment').get((req, res) => {aggrid_pib['interactivemediaentertainmentb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 router.route('/tickers/telecom').get((req, res) => {aggrid_pib['telecomb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 router.route('/tickers/mediaentertainment').get((req, res) => {aggrid_pib['mediaentertainmentb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
