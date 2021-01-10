@@ -73,6 +73,13 @@ const utilitiesSchema = new Schema({
   collection: 'utilities_chart'
 });
 
+//UNIVERSE
+const universeSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'universe_chart'
+});
+
 
 
 //GROUPS
@@ -144,6 +151,9 @@ const information_technology_chart  = mongoose.model('information_technology_cha
 const communication_services_chart  = mongoose.model('communication_services_chart', communication_servicesSchema);
 const utilities_chart  = mongoose.model('utilities_chart', utilitiesSchema);
 
+//Universe
+const universe_chart  = mongoose.model('universe_chart', universeSchema);
+
 
 //Groups
 const interactivemediaentertainment  = mongoose.model('interactivemediaentertainment', interactivemediaentertainmentSchema);
@@ -209,6 +219,7 @@ module.exports = {
   information_technology_chart ,
   communication_services_chart ,
   utilities_chart,
+  universe_chart,
   interactivemediaentertainment,
   telecom,
   mediaentertainment,

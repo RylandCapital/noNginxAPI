@@ -67,6 +67,11 @@ router.route('/utilities').get((req, res) => {
         .then(aggrid_pi => res.json(aggrid_pi))
         .catch(err => res.status(400).json('Error: ' + err));});
 
+router.route('/universe').get((req, res) => {
+            aggrid_pi['universe_chart'].find().lean()
+                .then(aggrid_pi => res.json(aggrid_pi))
+                .catch(err => res.status(400).json('Error: ' + err));});
+
 router.route('/interactivemediaentertainment').get((req, res) => {aggrid_pi['interactivemediaentertainment'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 router.route('/telecom').get((req, res) => {aggrid_pi['telecom'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 router.route('/mediaentertainment').get((req, res) => {aggrid_pi['mediaentertainment'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
