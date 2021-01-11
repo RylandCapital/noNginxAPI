@@ -98,6 +98,36 @@ const iwmSchema = new Schema({
   collection: 'iwmcfg_chart'
 });
 
+const indy_group1Schema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'indy_group1'
+});
+
+const indy_group2Schema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'indy_group2'
+});
+
+const indy_group3Schema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'indy_group3'
+});
+
+const indy_group4Schema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'indy_group4'
+});
+
+
+
+
+
+
+
 
 //GROUPS
 const interactivemediaentertainmentSchema = new Schema({}, {timestamps: true, collection:'interactivemediaentertainment'});
@@ -174,6 +204,10 @@ const qqq_chartcfg  = mongoose.model('qqq_chart', qqqSchema);
 const spy_chartcfg  = mongoose.model('spy_chart', spySchema);
 const iwm_chartcfg  = mongoose.model('iwm_chart', iwmSchema);
 
+const indy_group1_chart  = mongoose.model('indy_group1', indy_group1Schema);
+const indy_group2_chart  = mongoose.model('indy_group2', indy_group2Schema);
+const indy_group3_chart = mongoose.model('indy_group3', indy_group3Schema);
+const indy_group4_chart  = mongoose.model('indy_group4', indy_group4Schema);
 
 //Groups
 const interactivemediaentertainment  = mongoose.model('interactivemediaentertainment', interactivemediaentertainmentSchema);
@@ -232,17 +266,21 @@ module.exports = {
   consumer_staples_chart ,
   consumer_discretionary_chart ,
   energy_chart ,
-  financials_chart ,
-  health_care_chart ,
-  industrials_chart ,
-  real_estate_chart ,
-  information_technology_chart ,
-  communication_services_chart ,
+  financials_chart,
+  health_care_chart,
+  industrials_chart,
+  real_estate_chart,
+  information_technology_chart,
+  communication_services_chart,
   utilities_chart,
   universe_chart,
   qqq_chartcfg,
   spy_chartcfg,
   iwm_chartcfg,
+  indy_group1_chart ,
+  indy_group2_chart ,
+  indy_group3_chart ,
+  indy_group4_chart,
   interactivemediaentertainment,
   telecom,
   mediaentertainment,
