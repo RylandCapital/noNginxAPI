@@ -80,6 +80,23 @@ const universeSchema = new Schema({
   collection: 'universe_chart'
 });
 
+const qqqSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'qqqcfg_chart'
+});
+
+const spySchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'spycfg_chart'
+});
+
+const iwmSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'iwmcfg_chart'
+});
 
 
 //GROUPS
@@ -153,6 +170,9 @@ const utilities_chart  = mongoose.model('utilities_chart', utilitiesSchema);
 
 //Universe
 const universe_chart  = mongoose.model('universe_chart', universeSchema);
+const qqq_chartcfg  = mongoose.model('qqq_chart', qqqSchema);
+const spy_chartcfg  = mongoose.model('spy_chart', spySchema);
+const iwm_chartcfg  = mongoose.model('iwm_chart', iwmSchema);
 
 
 //Groups
@@ -220,6 +240,9 @@ module.exports = {
   communication_services_chart ,
   utilities_chart,
   universe_chart,
+  qqq_chartcfg,
+  spy_chartcfg,
+  iwm_chartcfg,
   interactivemediaentertainment,
   telecom,
   mediaentertainment,
