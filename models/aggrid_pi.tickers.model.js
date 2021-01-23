@@ -152,43 +152,6 @@ const utilities_sec_subSchema = new Schema({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const interactivemediaentertainmentbSchema = new Schema({}, {timestamps: true, collection:'interactivemediaentertainmentb'});
 const telecombSchema = new Schema({}, {timestamps: true, collection:'telecomb'});
 const mediaentertainmentbSchema = new Schema({}, {timestamps: true, collection:'mediaentertainmentb'});

@@ -166,6 +166,7 @@ const aggrid2_pi_group = require('./routes/aggrid2_pi_group');
 const aggrid2_cfg_pi_group = require('./routes/aggrid2_cfg_pi_group');
 const ratio = require('./routes/ratio');
 const curves = require('./routes/dyvolmastercurves');
+const spac = require('./routes/spacmomo');
 
 
 
@@ -314,6 +315,7 @@ app.use('/aggrid2_pi_group', aggrid2_pi_group);
 app.use('/aggrid2_cfg_pi_group', aggrid2_cfg_pi_group);
 app.use('/ratio', ratio);
 app.use('/curves', curves);
+app.use('/spac', spac);
 
 
 // sign up form integration
