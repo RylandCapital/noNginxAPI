@@ -175,6 +175,13 @@ router.route('/tickers/utilities').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/tickers/allaggrid').get((req, res) => {
+    aggrid_pib['allaggrid'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+
 
 
 

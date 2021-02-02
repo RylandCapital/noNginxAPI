@@ -70,6 +70,12 @@ const utilitiesbSchema = new Schema({
 });
 
 
+const allaggridSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'allaggrid'
+});
+
 
 
 
@@ -229,7 +235,7 @@ const information_technology_sec_sub = mongoose.model('information_technology_se
 const communication_services_sec_sub = mongoose.model('communication_services_sec_sub', communication_services_sec_subSchema);
 const utilities_sec_sub = mongoose.model('utilities_sec_sub', utilities_sec_subSchema);
 
-
+const allaggrid = mongoose.model('allaggrid', allaggridSchema);
 
 const interactivemediaentertainmentb  = mongoose.model('interactivemediaentertainmentb', interactivemediaentertainmentbSchema);
 const telecomb  = mongoose.model('telecomb', telecombSchema);
@@ -354,4 +360,5 @@ module.exports = {
   independentpowerrenewablesb,
   multilineutilitiesb,
   waterb,
+  allaggrid
   }
