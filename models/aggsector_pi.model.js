@@ -179,6 +179,7 @@ const gasSchema = new Schema({}, {timestamps: true, collection:'gas'});
 const independentpowerrenewablesSchema = new Schema({}, {timestamps: true, collection:'independentpowerrenewables'});
 const multilineutilitiesSchema = new Schema({}, {timestamps: true, collection:'multilineutilities'});
 const waterSchema = new Schema({}, {timestamps: true, collection:'water'});
+const chemicalsSchema = new Schema({}, {timestamps: true, collection:'chemicals'});
 
 
 
@@ -259,6 +260,7 @@ const gas  = mongoose.model('gas', gasSchema);
 const independentpowerrenewables  = mongoose.model('independentpowerrenewables', independentpowerrenewablesSchema);
 const multilineutilities  = mongoose.model('multilineutilities', multilineutilitiesSchema);
 const water  = mongoose.model('water', waterSchema);
+const chemicals  = mongoose.model('chemicals', chemicalsSchema);
 
 
 module.exports = {
@@ -329,7 +331,8 @@ module.exports = {
   gas,
   independentpowerrenewables,
   multilineutilities,
-  water
+  water,
+  chemicals
   
 }
 

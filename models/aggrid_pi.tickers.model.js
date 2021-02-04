@@ -207,6 +207,7 @@ const gasbSchema = new Schema({}, {timestamps: true, collection:'gasb'});
 const independentpowerrenewablesbSchema = new Schema({}, {timestamps: true, collection:'independentpowerrenewablesb'});
 const multilineutilitiesbSchema = new Schema({}, {timestamps: true, collection:'multilineutilitiesb'});
 const waterbSchema = new Schema({}, {timestamps: true, collection:'waterb'});
+const chemicalsbSchema = new Schema({}, {timestamps: true, collection:'chemicalsb'});
 
 
 
@@ -286,6 +287,7 @@ const gasb  = mongoose.model('gasb', gasbSchema);
 const independentpowerrenewablesb  = mongoose.model('independentpowerrenewablesb', independentpowerrenewablesbSchema);
 const multilineutilitiesb  = mongoose.model('multilineutilitiesb', multilineutilitiesbSchema);
 const waterb  = mongoose.model('waterb', waterbSchema);
+const chemicalsb  = mongoose.model('chemicalsb', chemicalsbSchema);
 
 
 module.exports = {
@@ -360,5 +362,6 @@ module.exports = {
   independentpowerrenewablesb,
   multilineutilitiesb,
   waterb,
+  chemicalsb,
   allaggrid
   }
