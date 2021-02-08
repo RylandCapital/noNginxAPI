@@ -210,6 +210,8 @@ const waterbSchema = new Schema({}, {timestamps: true, collection:'waterb'});
 const chemicalsbSchema = new Schema({}, {timestamps: true, collection:'chemicalsb'});
 
 
+const submenuSchema = new Schema({}, {timestamps: true, collection:'submenu'});
+
 
 
 const materialsb = mongoose.model('materialsb', materialsbSchema);
@@ -289,6 +291,8 @@ const multilineutilitiesb  = mongoose.model('multilineutilitiesb', multilineutil
 const waterb  = mongoose.model('waterb', waterbSchema);
 const chemicalsb  = mongoose.model('chemicalsb', chemicalsbSchema);
 
+const submenu  = mongoose.model('submenu', submenuSchema);
+
 
 module.exports = {
   materialsb,
@@ -363,5 +367,6 @@ module.exports = {
   multilineutilitiesb,
   waterb,
   chemicalsb,
-  allaggrid
+  allaggrid,
+  submenu
   }
