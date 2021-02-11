@@ -1,8 +1,16 @@
 const Validator = require("validator");
 const isEmpty = require("is-empty");
+
+
+//this just applies to the fields where the user inputs data and makes sure 
+//the information is valid. nothing to do with JWT tokens
+//it turns if the 1. the fields are valied and 2. the data entered
+//by the user
+
 module.exports = function validateRegisterInput(data) {
   let errors = {};
   let received = data;
+  
 // Convert empty fields to an empty string so we can use validator functions
   data.name = !isEmpty(data.name) ? data.name : "";
   data.email = !isEmpty(data.email) ? data.email : "";

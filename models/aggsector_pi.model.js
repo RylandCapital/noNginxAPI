@@ -180,7 +180,7 @@ const independentpowerrenewablesSchema = new Schema({}, {timestamps: true, colle
 const multilineutilitiesSchema = new Schema({}, {timestamps: true, collection:'multilineutilities'});
 const waterSchema = new Schema({}, {timestamps: true, collection:'water'});
 const chemicalsSchema = new Schema({}, {timestamps: true, collection:'chemicals'});
-
+const diversifiedconsumerservicesSchema = new Schema({}, {timestamps: true, collection:'diversifiedconsumerservices'});
 
 
 
@@ -261,6 +261,7 @@ const independentpowerrenewables  = mongoose.model('independentpowerrenewables',
 const multilineutilities  = mongoose.model('multilineutilities', multilineutilitiesSchema);
 const water  = mongoose.model('water', waterSchema);
 const chemicals  = mongoose.model('chemicals', chemicalsSchema);
+const diversifiedconsumerservices  = mongoose.model('diversifiedconsumerservices', diversifiedconsumerservicesSchema);
 
 
 module.exports = {
@@ -332,7 +333,8 @@ module.exports = {
   independentpowerrenewables,
   multilineutilities,
   water,
-  chemicals
+  chemicals,
+  diversifiedconsumerservices
   
 }
 

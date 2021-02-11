@@ -208,6 +208,7 @@ const independentpowerrenewablesbSchema = new Schema({}, {timestamps: true, coll
 const multilineutilitiesbSchema = new Schema({}, {timestamps: true, collection:'multilineutilitiesb'});
 const waterbSchema = new Schema({}, {timestamps: true, collection:'waterb'});
 const chemicalsbSchema = new Schema({}, {timestamps: true, collection:'chemicalsb'});
+const diversifiedconsumerservicesbSchema = new Schema({}, {timestamps: true, collection:'diversifiedconsumerservicesb'});
 
 
 const submenuSchema = new Schema({}, {timestamps: true, collection:'submenu'});
@@ -290,6 +291,7 @@ const independentpowerrenewablesb  = mongoose.model('independentpowerrenewablesb
 const multilineutilitiesb  = mongoose.model('multilineutilitiesb', multilineutilitiesbSchema);
 const waterb  = mongoose.model('waterb', waterbSchema);
 const chemicalsb  = mongoose.model('chemicalsb', chemicalsbSchema);
+const diversifiedconsumerservicesb  = mongoose.model('diversifiedconsumerservicesb', diversifiedconsumerservicesbSchema);
 
 const submenu  = mongoose.model('submenu', submenuSchema);
 
@@ -368,5 +370,6 @@ module.exports = {
   waterb,
   chemicalsb,
   allaggrid,
-  submenu
+  submenu,
+  diversifiedconsumerservicesb
   }
