@@ -318,7 +318,7 @@ router.route('/tickers/multilineutilities').get((req, res) => {aggrid_pib['multi
 router.route('/tickers/water').get((req, res) => {aggrid_pib['waterb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 router.route('/tickers/chemicals').get((req, res) => {aggrid_pib['chemicalsb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 router.route('/tickers/submenu').get((req, res) => {aggrid_pib['submenu'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
-router.route('/tickers/diversifiedconsumerservices').get((req, res) => {aggrid_pib['diversifiedconsumerservices'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/tickers/diversifiedconsumerservices').get((req, res) => {aggrid_pib['diversifiedconsumerservicesb'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 
 
 module.exports = router;
