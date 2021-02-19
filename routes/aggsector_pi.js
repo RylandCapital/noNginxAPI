@@ -159,5 +159,6 @@ router.route('/independentpowerrenewables').get((req, res) => {aggrid_pi['indepe
 router.route('/multilineutilities').get((req, res) => {aggrid_pi['multilineutilities'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 router.route('/water').get((req, res) => {aggrid_pi['water'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 router.route('/chemicals').get((req, res) => {aggrid_pi['chemicals'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
+router.route('/diversifiedconsumerservices').get((req, res) => {aggrid_pi['diversifiedconsumerservices'].find().lean().then(aggrid_pi =>res.json(aggrid_pi)).catch(err => res.status(400).json('Error: ' + err));});
 
 module.exports = router;
