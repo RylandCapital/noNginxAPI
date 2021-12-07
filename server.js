@@ -22,6 +22,8 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
 
+const healthRouter = require('./routes/healthcheck');
+
 const spxRouter = require('./routes/spx');
 const vixRouter = require('./routes/vix');
 const tltRouter = require('./routes/tlt');
@@ -172,6 +174,8 @@ const ratio2 = require('./routes/ratio2');
 
 
 app.use(express.static(path.join(__dirname, "client/build")))
+app.use('/healthcheck', healthRouter);
+app.use('/spx', spxRouter);
 app.use('/spx', spxRouter);
 app.use('/vix', vixRouter);
 app.use('/tlt', tltRouter);

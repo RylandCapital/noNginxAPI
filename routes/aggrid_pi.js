@@ -8,6 +8,102 @@ router.route('/world').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+
+
+
+
+
+
+
+
+///new adds
+router.route('/bondsizestyle').get((req, res) => {
+    aggrid_pi['bondsizestyle'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/currency').get((req, res) => {
+    aggrid_pi['currency'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/commodities').get((req, res) => {
+    aggrid_pi['commodities'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/esg').get((req, res) => {
+    aggrid_pi['esg'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/extended').get((req, res) => {
+    aggrid_pi['extended'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/alternative').get((req, res) => {
+    aggrid_pi['alternative'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/largegrval').get((req, res) => {
+    aggrid_pi['largegrval'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/midgrval').get((req, res) => {
+    aggrid_pi['midgrval'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/smallgrvalue').get((req, res) => {
+    aggrid_pi['smallgrvalue'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/socialresponse').get((req, res) => {
+    aggrid_pi['socialresponse'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 router.route('/intermarket').get((req, res) => {
     aggrid_pi['intermarket'].find().lean()
         .then(aggrid_pi => res.json(aggrid_pi))

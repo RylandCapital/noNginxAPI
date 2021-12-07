@@ -106,6 +106,69 @@ const utilitiesSchema = new Schema({
   collection: 'utilities'
 });
 
+const bondsizestyleSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'bond_size_style'
+});
+
+const commoditiesSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'commodities'
+});
+
+const currencySchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'currency'
+});
+
+const esgSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'esg'
+});
+
+const extendedSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'extended'
+});
+
+const alternativeSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'alternative'
+});
+
+const largegrvalSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'large_gr_val'
+});
+
+const midgrvalSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'mid_gr_val'
+});
+
+const smallgrvalueSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'small_gr_val'
+});
+
+const socialresponseSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'social_response'
+});
+
+
+
+
 
 const world = mongoose.model('world', worldSchema);
 const intermarket = mongoose.model('intermarket', intermarketSchema);
@@ -126,6 +189,19 @@ const communication_services = mongoose.model('communication_services', communic
 const utilities = mongoose.model('utilities', utilitiesSchema);
 
 
+const bondsizestyle = mongoose.model('bondsizestyle', bondsizestyleSchema);
+const currency = mongoose.model('currency', currencySchema);
+const commodities = mongoose.model('commodities', commoditiesSchema);
+const esg = mongoose.model('esg', esgSchema);
+const extended = mongoose.model('extended', extendedSchema);
+const alternative = mongoose.model('alternative', alternativeSchema);
+const largegrval = mongoose.model('largegrval', largegrvalSchema);
+const midgrval = mongoose.model('midgrval', midgrvalSchema);
+const smallgrvalue = mongoose.model('smallgrvalue', smallgrvalueSchema);
+const socialresponse = mongoose.model('socialresponse', socialresponseSchema);
+
+
+
 module.exports = {world,
   intermarket,
   size_style,
@@ -142,5 +218,14 @@ module.exports = {world,
   real_estate,
   information_technology,
   communication_services,
-  utilities
-  }
+  utilities,
+  bondsizestyle, 
+  currency,
+  commodities,
+  esg,
+  extended,
+  alternative,
+  largegrval,
+  midgrval,
+  smallgrvalue,
+  socialresponse}
