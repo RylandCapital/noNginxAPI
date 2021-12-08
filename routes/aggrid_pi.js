@@ -77,6 +77,19 @@ router.route('/socialresponse').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/crypto').get((req, res) => {
+    aggrid_pi['crypto'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/longshort').get((req, res) => {
+    aggrid_pi['longshort'].find().lean()
+        .then(aggrid_pi => res.json(aggrid_pi))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+
 
 
 

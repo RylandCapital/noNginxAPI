@@ -166,6 +166,19 @@ const socialresponseSchema = new Schema({
   collection: 'social_response'
 });
 
+const cryptoSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'crypto'
+});
+
+const longshortSchema = new Schema({
+}, {
+  timestamps: true,
+  collection: 'longshort'
+});
+
+
 
 
 
@@ -199,6 +212,8 @@ const largegrval = mongoose.model('largegrval', largegrvalSchema);
 const midgrval = mongoose.model('midgrval', midgrvalSchema);
 const smallgrvalue = mongoose.model('smallgrvalue', smallgrvalueSchema);
 const socialresponse = mongoose.model('socialresponse', socialresponseSchema);
+const crypto = mongoose.model('crypto', cryptoSchema);
+const longshort = mongoose.model('longshort', longshortSchema);
 
 
 
@@ -228,4 +243,6 @@ module.exports = {world,
   largegrval,
   midgrval,
   smallgrvalue,
-  socialresponse}
+  socialresponse,
+  crypto,
+  longshort}
